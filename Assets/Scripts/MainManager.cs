@@ -84,6 +84,7 @@ public class MainManager : MonoBehaviour
         {
             MenuManager.Instance.bestPlayer = currentPlayer;
             MenuManager.Instance.bestScore = m_Points;
+            MenuManager.Instance.SaveScorer();
         }
         bestScoreText.text = $"Best Score : {MenuManager.Instance.bestPlayer} : {MenuManager.Instance.bestScore}";
     }
